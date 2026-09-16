@@ -127,3 +127,13 @@
       #
       # This defines how long (after generating) the certificate remains valid.
       client_cert_lifetime="11months 30days 3h 50m 24s"
+
+      
+[monitoring]
+
+# /health  - Returns 200 in case the healthchecks have passed.
+# /metrics - Returns metrics which can be scraped by Prometheus.
+#
+# If not set, this endpoint will be disabled.
+
+bind="0.0.0.0:8083"
